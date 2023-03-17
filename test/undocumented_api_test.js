@@ -12,10 +12,10 @@ chai.should();
 describe("Undocumented API tests", function(){
 
     it("should return the settlement date", (done) => {
-       const inpdate = DateTime.local(2023, 11, 19, 0, 0, 0);
+      // const inpdate = DateTime.local(2023, 11, 19, 0, 0, 0);
         chai.request(app)
              .get('/api/v1/settlementDate')
-             .query({initialDate: inpdate, delay: 5})
+             .query({initialDate: '2023-18-3', delay: 5})
              .end((err, res) => {
                expect(res.statusCode).to.equal(200);
                console.log(res.body);
