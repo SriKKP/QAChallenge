@@ -14,3 +14,14 @@ The entire API is accessible under `/api/v1` and the following endpoints are ava
 
 - `GET /api/v1/settlementDate`
 - `GET /api/v1/isBusinessDay`
+
+## Run testsuite locally
+```
+npm test
+```
+
+## Run Cucumber testsuite(3 sample tests) locally
+
+```
+npx cucumber-js
+```
