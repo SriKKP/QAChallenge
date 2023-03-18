@@ -89,7 +89,7 @@ describe("v1 API tests", function() {
             });
     });
 
-    it('should return error code if date empty', (done) => {
+    it('should return error if date empty', (done) => {
         request(app)
             .get('/api/v1/isBusinessDay')
             .query({
@@ -102,7 +102,7 @@ describe("v1 API tests", function() {
                 done();
             });
     });
-    it('should return error code when date is invalid', (done) => {
+    it('should return error when date is invalid', (done) => {
         request(app)
             .get('/api/v1/isBusinessDay')
             .query({
